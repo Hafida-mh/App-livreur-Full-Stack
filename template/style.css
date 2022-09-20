@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.bod{
+    border: 1px solid black;
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}

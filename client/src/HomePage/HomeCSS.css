@@ -1,0 +1,857 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "MalayalamSangamMN";
+}
+
+@font-face {
+    font-family: "MalayalamSangamMN";
+    src: url("../MalayalamSangamMN.ttc") format("ttc"),
+        url("../MalayalamSangamMN.ttc") format("ttc");
+}
+
+
+
+@font-face {
+    font-family: "Lemonada";
+    src: url("../Lemonada-VariableFont_wght.ttf");
+}
+
+
+
+
+.Home {
+    border: 1px hidden black;
+    height: auto;
+    width: 100%;
+
+}
+
+
+.slideContainer {
+    border: 1px hidden black;
+    height: 600px;
+    width: 100%;
+    margin-top: 10px;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sides {
+    border: 1px hidden red;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+
+}
+
+.sides.images {
+    border: 4px hidden gray;
+    animation-name: bubble;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    background-color: rgba(252, 186, 90, 0.2);
+
+}
+
+
+@keyframes bubble {
+    0% {
+        border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+    }
+
+    50% {
+        border-radius: 48% 62% 78% 42% / 42% 48% 82% 68%;
+    }
+
+    100% {
+        border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+    }
+}
+
+
+@keyframes move {
+    0% {
+        right: -100px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
+.titleSection1,
+.titleSection2 {
+    border: 1px hidden black;
+    font-family: "Lemonada";
+    font-size: 7em;
+    margin-left: 10px;
+    /* transform: rotate(-10deg);*/
+    font-weight: 900;
+    text-align: center;
+    color: #82368C;
+}
+
+.titleSection1+.titleSection2 {
+    margin-top: -30px;
+}
+
+.titleSection2+.titleSection3 {
+    margin-top: -35px;
+}
+
+.titleSection3 {
+    border: 1px hidden black;
+    font-size: 9em;
+    font-family: "MalayalamSangamMN";
+    /* transform: rotate(-10deg);*/
+    font-weight: 700;
+    margin-left: 20px;
+    /*  text-decoration-line: underline;
+    text-decoration-color: #FCBA5A;*/
+    text-align: center;
+    color: #82368C;
+}
+
+
+.client {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 30em;
+}
+
+.moto {
+    position: absolute;
+    right: 0;
+    top: 170px;
+    width: 20em;
+    animation-name: move;
+    animation-duration: 3s;
+}
+
+
+
+.nav {
+    border: 1px hidden black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: "MalayalamSangamMN";
+    position: fixed;
+}
+
+.navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* ChoiceConnexion */
+
+
+.choiceConnexion {
+    border: 1px hidden black;
+    height: 500px;
+    width: 100%;
+
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choiceConnexioncontainer {
+    border: 1px hidden violet;
+    width: 600px;
+    height: auto;
+    background-color: #82368C;
+    border-radius: 10px;
+}
+
+.choiceConnexioncontainer h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 3.2em;
+    margin: 20px;
+    color: white;
+}
+
+
+
+.clientLivreur {
+    border: 1px hidden white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.clientLivreurContainer {
+    border: 1px hidden green;
+    height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.7em;
+    margin: 20px;
+    color: white;
+}
+
+
+.clientLivreurContainer .linkToClient {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.buttonsSection {
+    border: 1px hidden black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button1 {
+    border: 1px hidden red;
+    width: 240px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: #FCBA5A;
+    color: white;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+.clientWork {
+    border: 1px hidden orange;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientWork img {
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
+}
+
+.button1 button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+.caroussel {
+    height: 600px;
+    color: white;
+    width: 100%;
+}
+
+
+
+.clique {
+    border: 1px hidden black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin-top: 20px;
+    color: #FCBA5A;
+}
+
+.cliqueFleche {
+    transform: rotate(90deg);
+    font-size: 1.7em;
+}
+
+
+.clique div+div {
+    margin-top: -20px;
+}
+
+
+.objectifSection {
+    border: 1px hidden black;
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    background-color: #82368C;
+}
+
+.objectifTitle {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.objectifTexte {
+    font-size: 1.4em;
+    width: 80%;
+    line-height: 1.8;
+    text-justify: justify;
+    text-align: center;
+}
+
+/******************* **************************/
+
+.workSection {
+    border: 1px hidden black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+}
+
+.workTitle {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.workSection1 {
+    border: 1px hidden tomato;
+    height: auto;
+    width: 80%;
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    position: relative;
+}
+
+.cherche {
+    border: 1px hidden green;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 3.9em;
+    font-weight: 800;
+
+}
+
+.cherche div {
+    margin-right: 100px;
+    color: #FEBD59;
+}
+
+.clientSection {
+    border: 1px hidden black;
+    width: 90%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+/*
+.clientSectionText.livr {
+    width: 90%;
+    height: 320px;
+   
+}
+*/
+
+.livreur {
+    height: 250px;
+    width: 290px;
+    position: absolute;
+    right: -98px;
+    top: 194px;
+    bottom: 0;
+}
+
+.livreur div {
+    transform: rotate(90deg);
+    border: 1px hidden orange;
+    text-align: center;
+    font-size: 3.9em;
+    font-weight: 800;
+    color: #FEBD59;
+}
+
+.clientSectionText {
+    border: 1px hidden violet;
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 1.75;
+    width: 89%;
+}
+
+
+
+.linkConnexion {
+    margin-top: 50px;
+    color: #82368C;
+    font-size: 1.2em;
+    z-index: 100;
+}
+
+.linkConnexion .linkToClient {
+    text-decoration: none;
+    color: #82368C;
+}
+
+.chercheLivreur {
+    display: none;
+}
+
+.ouAlors {
+    border: 1px hidden green;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11em;
+    color: #82368C;
+    line-height: 1;
+
+}
+
+.ouAlors div {
+    opacity: 0.24;
+}
+
+.workSection1.section2 {
+    margin-top: -5px;
+    border: 1px hidden pink;
+    height: 500px;
+}
+
+/* 
+.nav{
+    position: fixed;
+}
+*/
+/* SLIDE */
+
+
+.askHelp {
+    border: 1px hidden black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #82368C;
+
+}
+
+.helpTitle {
+    font-size: 3em;
+    color: white;
+    font-weight: 600;
+}
+
+.contactButton {
+    border: 1px hidden black;
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 600;
+    background-color: #FEBD59;
+    cursor: pointer;
+}
+
+.contactButton div {
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+.linkToContact {
+    text-decoration: none;
+}
+
+.contactContainer {
+    border: 1px hidden black;
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #82368C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.listMenu {
+    border: 1px hidden red;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.75em;
+    color: white;
+
+}
+
+.conditions {
+    margin-top: 10px;
+}
+
+
+.newsmetter {
+    border: 1px hidden pink;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.9em;
+    margin-right: 30px;
+    line-height: 1;
+}
+
+.newsmetter div {
+    margin: 10px;
+}
+
+.newsmetter div input {
+    width: 430px;
+
+}
+
+.logoWhite {
+    width: 320px;
+    height: 300px;
+    border: 1px hidden black;
+    object-fit: cover;
+}
+
+
+/**************************** RESPONSIVE **************************/
+@media screen and (max-width : 848px) {
+    .objectifSection {
+        height: auto;
+    }
+
+    .clientSection {
+        align-items: center;
+    }
+
+
+    .clientSectionText {
+
+        font-size: 1.4em;
+
+    }
+
+}
+
+
+@media screen and (max-width: 530px) {
+    .objectifTitle {
+        font-size: 3em;
+    }
+
+    .objectifTexte {
+        font-size: 1.2em;
+    }
+}
+
+
+
+@media screen and (max-width : 517px) {
+    .buttonsSection {
+        flex-direction: column;
+    }
+
+    .button1 {
+        width: 340px;
+        height: 100px;
+
+
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width : 399px) {
+    .objectifTitle {
+        font-size: 2.8em;
+        margin-top: 10px;
+    }
+
+    .ouAlors {
+        font-size: 5em;
+    }
+
+  
+}
+
+@media screen and (max-width : 354px) {
+    .objectifTitle {
+        text-align: center;
+        line-height: 1;
+    }
+
+    .objectifTexte {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width : 1396px) {
+    .clientSection {
+        height: auto;
+    }
+
+}
+
+
+
+@media screen and (max-width : 970px) {
+    .chercheLivreur {
+        display: inline-flex;
+    }
+
+    .checheTitle {
+        display: none;
+    }
+
+    .cherche div {
+        margin-right: 0px;
+        color: #FEBD59;
+        text-align: center;
+    }
+
+    .clientSectionText {
+        border: 1px hidden violet;
+        font-size: 1.6em;
+        text-align: center;
+        line-height: 1.75;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+    .clientSection {
+        border: 1px hidden black;
+        width: 100%;
+    }
+
+
+    .livreur {
+        display: none;
+    }
+
+    .cherche {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width : 766px) {
+
+    .titleSection1,
+    .titleSection2 {
+
+        font-size: 4em;
+        margin-left: 0;
+    }
+
+
+
+    .titleSection3 {
+        font-size: 5em;
+        margin-left: 0;
+    }
+    .titleSection1+.titleSection2 {
+        margin-top: -20px;
+    }
+    
+    .titleSection2+.titleSection3 {
+        margin-top: -25px;
+    }
+    .button1 {
+        border: 1px hidden red;
+        width: 280px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        background-color: #FCBA5A;
+        color: white;
+        margin: 10px;
+        border-radius: 20px;
+    
+    }
+    
+
+}
+
+@media screen and (max-width : 655px) {
+    .workTitle {
+        font-size: 3em;
+        font-weight: 800;
+        text-align: center;
+        line-height: 1.29;
+    }
+
+    .chercheLivreur {
+        font-size: 0.8em;
+        line-height: 1.2;
+    }
+
+    .clientSectionText {
+        line-height: 1.49;
+    }
+
+    .linkConnexion {
+        margin-top: 30px;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width :1085px) {
+    .slideContainer {
+        flex-direction: column;
+        border: 1px solid black;
+    }
+
+    .sides.images {
+        border: 1px hidden black;
+        height: 550px;
+        display: none;
+    }
+
+    .sides {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+
+    .slideContainer {
+        border: 1px hidden black;
+        height: auto;
+
+    }
+
+}
+
+
+
+
+@media screen and (min-width : 1397px) {
+    .clientSectionText.livr {
+        margin-top: 130px;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width : 1283px) {
+    .workSection1.section2 {
+        margin-top: -5px;
+        border: 1px hidden pink;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width : 368px) {
+    .helpTitle {
+        font-size: 1.9em;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+
+
+@media screen and (max-width : 1095px) {
+    .contactContainer {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .contactContainer div {
+        margin-left: 20px;
+
+    }
+
+
+    .listMenu {
+        margin-top: -70px;
+    }
+
+
+    .newsmetter {
+        margin-top: 20px;
+    }
+}
+
+
+.homeContainer {
+    height: 60vh;
+    width: 900px;
+}
+
+
+.homeContainer div button {
+    border: 1px solid black;
+    height: 100px;
+    width: 320px;
+    cursor: pointer;
+    font-size: 1.6em;
+    background-color: transparent;
+}
+
+.connexionLink {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}

@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.navBar {
+    border: 1px hidden black;
+    height: 100px;
+    width: 100%;
+    color: black;
+    background-color: white
+}
+
+
+.navBar .itemnav {
+    color: red;
+    font-size: 1.1em;
+    font-family: 'Anek Malayalam', sans-serif;
+    z-index: 100888877;
+}
+
+.navBar .itemnav div {
+    color: black;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    z-index: 100888877;
+}
+
+.buttonConnexionNav {
+    width: 150px;
+    height: 50px;
+    border: 1px hidden black;
+    background-color: #FCBA5A;
+    border-radius: 40px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.langageSelect {
+    margin-top: 15px;
+    color: black;
+}
+
+
+#responsive-navbar-nav {
+    background-color: white;
+}
+
+.profil {
+    height: 30px;
+    width: 30px;
+}
+
+.overLayTrigger {
+    z-index: 54000;
+}
+
+.navBar .connexionProfil {
+    z-index: -12;
+}
+.linkNav:hover {
+color: black;
+}
+
+
+
+@media screen and (max-width : 992px){
+    .navBar { 
+        height: 150px;
+        width: 100%;
+        position: relative;
+    }
+    #responsive-navbar-nav {
+        margin-top: -30px;
+   width: 100%;
+    }
+
+
+}
+/*
+.linkTo {
+    text-decoration: none;
+    color: white;
+}
+
+.linkTo:hover {
+    color: white;
+}
+
+.navContainer {
+    border: 1px solid red;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    background-color: white;
+    z-index: 200;
+
+}
+
+.closeButton {
+    margin: 20px;
+    color: white;
+}
+
+
+.navbarContainer{
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navContent {
+    border: 1px solid blue;
+    height: auto;
+    width: auto;
+    margin-left: 80px;
+
+}
+
+.logoContent {
+    border: 1px solid orange;
+    height: 120px;
+    width: 180px;
+    margin-left: 20px;
+}
+
+
+.logoContent img {
+    border: 1px hidden black;
+    height: 120px;
+    width: 180px;
+    object-fit: cover;
+}
+
+
+.connexion {
+    border: 1px solid pink;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 15px;
+    margin-right: 20px;
+}
+
+
+.navItem {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navItem div {
+    margin: 25px;
+    font-weight: 400;
+}
+
+.connexion div {
+    margin: 19px;
+}
+
+.connexion .button {
+    border: 1px solid black;
+    height: 50px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #FCBA5A;
+    color: white;
+    font-weight: 800;
+}
+
+
+.connexion .burgerButton {
+    border: 1px solid black;
+    height: 80px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+    position: absolute;
+    right: 150px;
+}
+
+#sectionLanguage {
+    width: auto;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+
+
+.navItem div:hover {
+    border-bottom: 2.5px solid #FCBA5A;
+
+}
+
+.navResponsive {
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    margin-top: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    transition: height 4s;
+    transition-timing-function: ease;
+    color: black;
+    z-index: 12345675678;
+}
+
+
+.navResponsive div {
+    margin: 10px;
+    color: black;
+    font-size: 1.3em;
+}
+
+.choiceConnexion {
+    border: 1px hidden black;
+    height: 500px;
+    width: 100%;
+    margin-top: 600px;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choiceConnexioncontainer {
+    border: 1px hidden violet;
+    width: 600px;
+    height: auto;
+    background-color: #82368C;
+    border-radius: 10px;
+}
+
+.choiceConnexioncontainer h1 {
+    font-size: 2.5em;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 3.2em;
+    margin: 20px;
+    color: white;
+}
+
+
+
+.clientLivreur {
+    border: 1px hidden white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.clientLivreurContainer {
+    border: 1px hidden green;
+    height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.7em;
+    margin: 20px;
+    color: white;
+}
+
+
+.clientLivreurContainer .linkToClient {
+    color: white;
+    text-decoration: none;
+}
+
+
+.linkNav {
+    text-decoration: none;
+    color: black;
+}
+
+
+.linkNav:hover {
+    color: black;
+}
+
+.imgSmallScreen {
+    object-fit: cover;
+    height: 60px;
+    border: 1px solid black;
+}
+
+
+.connexionProfil {
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.profil {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+
+}
+
+@media screen and (max-width : 1038px) {
+    .connexion .burgerButton {
+        display: inline-flex;
+
+    }
+
+    #sectionLanguage,
+    .connexion .button,
+    .navItem {
+        display: none;
+    }
+
+    .navContainer {
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width : 358px) {
+    .logoContent {
+        margin-left: 0px;
+    }
+}
+
+
+*/

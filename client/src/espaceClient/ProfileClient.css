@@ -1,0 +1,702 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.navbarProfil {
+    z-index: 19883939;
+}
+
+.ProfileClient {
+    border: 1px hidden black;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.navbarProfil {
+    z-index: 10;
+}
+
+.formContainer .settingInfoTitle {
+    border: 1px hidden black;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: #82368C;
+    margin-top: 100px;
+}
+
+.formContainer .settingInfoTitle h1 {
+    font-size: 5em;
+}
+
+.formContainer .settingInfoTitle h3 {
+    font-size: 2em;
+}
+
+
+.settingInfoTitle h1+h3 {
+    margin-top: -10px;
+}
+
+.buttonOption {
+    border: 1px hidden black;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    top: 200px;
+    right: 25px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 300086400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.options {
+    border: 1px hidden black;
+    height: auto;
+    width: 310px;
+    position: fixed;
+    top: 320px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.optionsItem {
+    border: 1px hidden black;
+    line-height: 1;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: #82368C;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sittingimg {
+    height: 55px;
+    width: 55px;
+}
+
+.optionsItem+.optionsItem {
+    margin-top: 10px;
+
+}
+
+.offCanvaTitle {
+    font-size: 1, 4em;
+}
+
+.profileTitle {
+    border: 1px hidden red;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 180px;
+    flex-direction: column;
+    color: #82368C;
+}
+
+.profileTitle h1 {
+    font-size: 5em;
+
+
+}
+
+.profileTitle h3 {
+    font-size: 2em;
+}
+
+
+.profileTitle h1+h3 {
+    margin-top: -10px;
+}
+
+
+/* FORM */
+
+.formcontent {
+    border: 1px hidden orange;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 467889;
+}
+
+
+.formcontainer {
+    border: 1px hidden green;
+    height: auto;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 467889;
+}
+
+.formcontaineritem {
+    border: 1px hidden red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.formcontaineritemTitle {
+    font-size: 1.9em;
+}
+
+.obligatoire {
+    color: #F73737;
+}
+
+#sectionWilaya,
+#sectionVehi {
+    border: 1px solid black;
+    width: 500px;
+    height: 60px;
+    font-size: 1.5em;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.buttonchercher {
+    border: 1px hidden black;
+    height: 50px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    background-color: #FCBA5A;
+    color: white;
+}
+
+
+.formcontent.search {
+    border: 1px hidden black;
+    height: 60vh;
+}
+
+
+
+.formcontaineritemTitle+.obligatoire {
+    margin-top: -10px;
+}
+
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    background-color: #FCBA5A;
+
+}
+
+
+.spinnerBox {
+    border: 1px hidden orange;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+
+.titleTable {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* CONTACT LIVREUR*/
+
+.livreurContactContainer {
+    border: 1px hidden black;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.livreurContactContent {
+    border: 1px hidden orange;
+    height: auto;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.titleResulat + Table {
+margin-top: 150px;
+}
+
+.titleResulat  h1 {
+    font-size: 3.5em;
+    color: #82368C;
+}
+
+/**  FORM CONTACT **/
+
+
+.ProfileClient .formContainer {
+    border: 1px hidden black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    margin-top: 130px;
+}
+
+.formContainer .formContent {
+    border: 1px hidden green;
+    height: 100%;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formItem {
+    border: 1px hidden red;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nameForm {
+    border: 1px hidden black;
+    height: auto;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputFiled {
+    border: 1px solid black;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    outline: hidden;
+    font-size: 1.4em;
+}
+
+.formNomination {
+    border: 1px hidden red;
+    height: auto;
+    width: 100px;
+    font-size: 1.5em;
+}
+
+.formItemInfo {
+    border: 1px hidden blue;
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.inputFiledInfo {
+    width: 750px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: hidden;
+    font-size: 1.4em;
+}
+
+.nameFormInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formNomination.confirmation {
+    line-height: 1;
+}
+
+.formItem.password {
+    margin-top: 20px;
+}
+
+.profilClient {
+    border: 1px hidden red;
+    height: 120px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #82368C;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.selectChoice {
+    border: 1px hidden white;
+    height: 100%;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.selectfieldInfo {
+    width: 400px;
+    height: 50px;
+    outline: none;
+    border: none;
+}
+
+.profilClientNomination {
+    font-size: 1.9em;
+    color: white;
+}
+
+.buttonContainer {
+    border: 1px hidden pink;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonConnexion {
+    border: 1px hidden pink;
+    height: 50px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    border-radius: 30px;
+    background-color: #FCBA5A;
+    color: white;
+    margin-top: 40px;
+}
+
+#sectionStatut {
+    font-size: 1.4em;
+}
+
+
+
+.offcanva {
+    z-index: 1000647484;
+}
+
+
+.imgcanva {
+    height: 30px;
+    width: 30px;
+}
+
+.alrtNotFound {
+    margin-top: 200px;
+    border: 1px hidden black;
+    height: 40vh;
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tab {
+    border: 1px hidden black;
+    height: 93vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tabContainer {
+    border: 1px hidden red;
+    height: auto;
+    width: 80%;
+    display: flex;
+margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.tab .titleSection {
+    margin-top: 70px;
+    text-align: center;
+    line-height: -30px;
+}
+.tab .titleSection h1{
+    font-size: 5em;
+font-weight: 400;
+color: #82368C;
+}
+
+.tab .titleSection h2{
+    font-size: 3em;
+font-weight: 400;
+color: #82368C;
+}
+
+
+.tab .titleSection h1 + h2 {
+margin-top: -20px;
+
+}
+
+
+
+.signalButton {
+    border: 1px hidden black;
+    height: 45px;
+    width: 120px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: #FCBA5A;
+}
+
+.signalButton button {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+}
+
+.inputTel {
+    border: 1px solid black;
+    height: 50px;
+    width: 370px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.labelTabContainer {
+    font-size: 1.4em;
+}
+
+
+.alrtSignal {
+    margin-top: 10px;
+}
+
+
+
+
+.footerProfil {
+    border: 1px hidden black;
+    width: 100%;
+    height: auto;
+}
+/* RESPONSIVE */
+
+
+@media screen and (max-width : 466px) {
+    .inputTel {
+        width: 100%;
+    }
+
+    .tabContainer {
+        width: 95%;
+    }
+}
+
+
+
+@media screen and (max-width : 992px) {
+    .tab .titleSection {
+        margin-top: 170px;
+    }
+
+ 
+}
+
+
+
+
+
+@media screen and (max-width: 937px) {
+    .formcontaineritem {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .formcontainer {
+        width: auto;
+    }
+
+    #sectionWilaya,
+    #sectionVehi {
+        margin-top: 20px;
+    }
+    .formcontent.search {
+        height: auto;
+    }
+    
+
+}
+
+
+@media screen and (max-width : 630px) {
+    .buttonOption {
+        top: 120px;
+
+    }
+
+    .profileTitle {
+        margin-top: 220px;
+    }
+}
+
+
+
+
+@media screen and (max-width : 590px) {
+    .livreurContactContainer {
+        overflow: scroll;
+        position: relative;
+    }
+
+  
+}
+
+
+
+@media screen and (max-width : 529px) {
+
+    #sectionWilaya,
+    #sectionVehi {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width : 435px) {
+
+    #sectionWilaya,
+    #sectionVehi {
+        width: 350px;
+    }
+
+    .profileTitle h1 {
+        font-size: 3.5em;
+
+
+    }
+
+    .profileTitle h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width : 369px) {
+
+    #sectionWilaya,
+    #sectionVehi {
+        width: 306px;
+    }
+}
+
+
+
+
+
+/*
+
+.ProfileClient{
+    border: 1px hidden black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.candidat{
+    border: 1px hidden black;
+    height: auto;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.candidat div{
+    margin-top: 20px;
+
+}
+
+
+.hold{
+    border: 1px solid orange;
+    height: 40px;
+    width: 180px;
+    background-color: transparent;
+}
+
+
+.candidat{
+    display: hidden;
+}
+
+.candidatFirstChoise{
+    display: inline;
+}
+*/

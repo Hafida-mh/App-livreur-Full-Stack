@@ -1,0 +1,78 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ .Merci{
+    border: 1px hidden black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+ }
+
+ .componentrmerci{
+    border: 1px hidden orange;
+    height: auto;
+    width: 100%;
+ }
+
+
+ .merciContent{
+    border: 1px hidden blue;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #82368C;
+    margin-top: 120px;
+    text-align: center;
+ }
+
+ .merciContent .thank {
+    font-size: 3.7em;
+    font-weight: 800;
+    line-height: 1;
+ }
+
+
+ .merciContent .reception {
+    font-size: 1.8em;
+ }
+
+ .merciContent .thank + .reception {
+    margin-top: 5px;
+ }
+
+ .merciContent .reception {
+    font-size: 1.8em;
+    font-weight: 600;
+ }
+
+ .merciContent  .seeyou {
+    font-size: 1.6em;
+    margin-top: 20px;
+ }
+
+
+@media screen and (max-width : 839px) {
+    .Merci{
+        height: auto;
+     }
+
+     .merciContent{
+     margin-top: 200px;
+     }
+
+     .merciContent .thank + .reception  {
+        margin-top: 15px;
+     }
+
+     .livreurimg {
+      width: 13em;
+     }
+}

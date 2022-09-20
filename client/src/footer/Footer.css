@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contactContainer{
+    border: 1px hidden black;
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #82368C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  
+}
+
+.contactContainer div{
+    color: white;
+}
+.listMenu{
+    border: 1px hidden red;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.75em;
+    color: white;
+ 
+}
+
+.conditions{
+    margin-top: 10px;
+}
+
+
+.newsmetter{
+    border: 1px hidden pink;
+    height: auto;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+flex-direction: column;
+color: white;
+font-size: 1.9em;
+margin-right: 30px;
+line-height: 1;
+}
+
+.newsmetter div{
+    margin: 10px;
+}
+
+.newsmetter div input{
+   width: 430px;
+ 
+}
+
+.logoWhite{
+    width: 320px;
+    height: 300px;
+    border: 1px hidden black;
+    object-fit: cover;
+}
+
+
+/************ RESPONSIVE **********/
+@media screen and (max-width : 1095px) {
+    .contactContainer{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+    .contactContainer div{
+        margin-left: 20px;
+       
+    }
+
+
+    .listMenu{
+        margin-top: -70px;
+    }
+
+
+.newsmetter{
+    margin-top: 20px;
+}
+}
+
+
+@media screen and (max-width : 481px) {
+    .newsmetter div input{
+        width: 100%;
+     }
+
+     .logoWhite{
+        width: 290px;
+        height: 300px;
+        border: 1px hidden black;
+        object-fit: cover;
+    }
+}
