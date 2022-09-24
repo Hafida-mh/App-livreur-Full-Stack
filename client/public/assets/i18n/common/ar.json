@@ -4,8 +4,11 @@
     "chercher" : "بحث",
     "envoyer" : "أرسل",
     "accueil" : "إستقبال",
-    "espacelivreur" : "موقع الوصلين",
+    "espacelivreur" : "موقع الموصلين",
     "espaceclient" : "موقع الزبائن",
+    "esapcecontact" : "موقع الإتصال",
+    "conctactnous" : " إتصل بنا",
+    "message" : "رسالتك",
     "contact" : "اتصال",
     "bienvenue" : "مرحبا",
     "trouverlivreur" : "إبحث عن توصيل",
@@ -34,5 +37,16 @@
     "choix" : " إختار",
     "pasdecompte" : " ليس لديك حساب ؟",
     "motdepassoublier" : "نسيت كلمة السر ؟",
-    "inscrivezvous" : "سجل نفسك"
-}
+    "inscrivezvous" : "سجل نفسك",
+    "vehiculedelivraison" : "وسيلة التوصيل",
+    "resultatrecherche" : "نتيجة البحث",
+    "modificationinformation" : "تعديل المعلومات الشخصية",
+    "modifier" : "تعديل",
+    "infoperso" : " المعلومات الشخصية",
+    "chercherlivreur" : " البحث عن موصل",
+    "parametreprofil" : "إعدادات  الحساب",
+    "choixwilaya" : "إختار الولاية",
+    "choixvehicule" : "إختار وسيلة التوصيل",
+    "entrerlivreur" : "أدخل رقم هاتف الشخص المسؤول عن التوصيل",
+    "inscription" : "التسجيل"
+} 

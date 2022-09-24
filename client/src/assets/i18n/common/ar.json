@@ -27,5 +27,6 @@
     "motdepass" : "Mot de passe",
     "confirmation" : "Confirmer mot de passe",
     "wilayadelivraison" : "Wilaya de livraison",
-    "vehicule" : "Vihécule de livraison"
+    "vehicule" : "Vihécule de livraison",
+    "modifierinfo" : "تعديل المعلومات الشخصية"
 }
