@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    
 }
 
 .navbarProfil {
@@ -40,7 +39,6 @@
 .formContainer .settingInfoTitle h3 {
     font-size: 2em;
 }
-
 
 .settingInfoTitle h1+h3 {
     margin-top: -10px;
@@ -97,7 +95,6 @@
 
 .optionsItem+.optionsItem {
     margin-top: 10px;
-
 }
 
 .offCanvaTitle {
@@ -118,22 +115,17 @@
 
 .profileTitle h1 {
     font-size: 5em;
-
-
 }
 
 .profileTitle h3 {
     font-size: 2em;
 }
 
-
 .profileTitle h1+h3 {
     margin-top: -10px;
 }
 
-
 /* FORM */
-
 .formcontent {
     border: 1px hidden orange;
     height: auto;
@@ -145,7 +137,6 @@
     position: relative;
     z-index: 467889;
 }
-
 
 .formcontainer {
     border: 1px hidden green;
@@ -166,7 +157,6 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
-
 }
 
 .formcontaineritemTitle {
@@ -185,7 +175,6 @@
     font-size: 1.5em;
     outline: none;
     border-radius: 5px;
-
 }
 
 .buttonchercher {
@@ -202,26 +191,20 @@
     color: white;
 }
 
-
 .formcontent.search {
     border: 1px hidden black;
     height: 60vh;
 }
 
-
-
 .formcontaineritemTitle+.obligatoire {
     margin-top: -10px;
 }
-
 
 .spinner {
     width: 100px;
     height: 100px;
     background-color: #FCBA5A;
-
 }
-
 
 .spinnerBox {
     border: 1px hidden orange;
@@ -239,14 +222,12 @@
     position: fixed;
 }
 
-
 .titleTable {
     font-size: 1.2em;
     font-weight: 500;
 }
 
 /* CONTACT LIVREUR*/
-
 .livreurContactContainer {
     border: 1px hidden black;
     height: 80vh;
@@ -269,7 +250,7 @@
 }
 
 .titleResulat + Table {
-margin-top: 150px;
+    margin-top: 150px;
 }
 
 .titleResulat  h1 {
@@ -278,8 +259,6 @@ margin-top: 150px;
 }
 
 /**  FORM CONTACT **/
-
-
 .ProfileClient .formContainer {
     border: 1px hidden black;
     height: auto;
@@ -287,7 +266,6 @@ margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-direction: column;
     margin-top: 130px;
 }
@@ -299,7 +277,6 @@ margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .formItem {
@@ -427,12 +404,9 @@ margin-top: 150px;
     font-size: 1.4em;
 }
 
-
-
 .offcanva {
     z-index: 1000647484;
 }
-
 
 .imgcanva {
     height: 30px;
@@ -467,10 +441,9 @@ margin-top: 150px;
     height: auto;
     width: 80%;
     display: flex;
-margin-top: 100px;
+    margin-top: 100px;
     align-items: center;
     justify-content: center;
-  
 }
 
 .tab .titleSection {
@@ -478,25 +451,22 @@ margin-top: 100px;
     text-align: center;
     line-height: -30px;
 }
+
 .tab .titleSection h1{
     font-size: 5em;
-font-weight: 400;
-color: #82368C;
+    font-weight: 400;
+    color: #82368C;
 }
 
 .tab .titleSection h2{
     font-size: 3em;
-font-weight: 400;
-color: #82368C;
+    font-weight: 400;
+    color: #82368C;
 }
-
 
 .tab .titleSection h1 + h2 {
-margin-top: -20px;
-
+    margin-top: -20px;
 }
-
-
 
 .signalButton {
     border: 1px hidden black;
@@ -534,129 +504,97 @@ margin-top: -20px;
     margin-top: 10px;
 }
 
-
-
-
 .footerProfil {
     border: 1px hidden black;
     width: 100%;
     height: auto;
 }
+
 /* RESPONSIVE */
-
-
 @media screen and (max-width : 466px) {
-    .inputTel {
+.inputTel {
         width: 100%;
-    }
-
-    .tabContainer {
-        width: 95%;
-    }
 }
 
-
+.tabContainer {
+        width: 95%;
+}
+}
 
 @media screen and (max-width : 992px) {
-    .tab .titleSection {
+.tab .titleSection {
         margin-top: 170px;
-    }
-
- 
+} 
 }
-
-
-
-
 
 @media screen and (max-width: 937px) {
-    .formcontaineritem {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
+.formcontaineritem {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
 
-    .formcontainer {
-        width: auto;
-    }
+.formcontainer {
+    width: auto;
+}
 
-    #sectionWilaya,
-    #sectionVehi {
-        margin-top: 20px;
-    }
-    .formcontent.search {
-        height: auto;
+#sectionWilaya,
+#sectionVehi {
+    margin-top: 20px;
     }
     
-
+.formcontent.search {
+    height: auto;
+    }
 }
-
 
 @media screen and (max-width : 630px) {
-    .buttonOption {
-        top: 120px;
-
-    }
-
-    .profileTitle {
-        margin-top: 220px;
-    }
+.buttonOption {
+    top: 120px;
 }
 
-
-
+.profileTitle {
+    margin-top: 220px;
+}
+}
 
 @media screen and (max-width : 590px) {
-    .livreurContactContainer {
-        overflow: scroll;
-        position: relative;
-    }
-
-  
+.livreurContactContainer {
+    overflow: scroll;
+    position: relative;
+}  
 }
 
-
-
 @media screen and (max-width : 529px) {
-
-    #sectionWilaya,
-    #sectionVehi {
-        width: 420px;
-    }
+#sectionWilaya,
+#sectionVehi {
+    width: 420px;
+}
 }
 
 @media screen and (max-width : 435px) {
+#sectionWilaya,
+#sectionVehi {
+    width: 350px;
+}
 
-    #sectionWilaya,
-    #sectionVehi {
-        width: 350px;
-    }
+.profileTitle h1 {
+    font-size: 3.5em;
+}
 
-    .profileTitle h1 {
-        font-size: 3.5em;
-
-
-    }
-
-    .profileTitle h3 {
-        font-size: 1.5em;
-    }
+.profileTitle h3 {
+    font-size: 1.5em;
+}
 }
 
 @media screen and (max-width : 369px) {
-
-    #sectionWilaya,
-    #sectionVehi {
-        width: 306px;
-    }
+#sectionWilaya,
+#sectionVehi {
+    width: 306px;
+}
 }
 
-
-
-
-
 /*
-
 .ProfileClient{
     border: 1px hidden black;
     height: 100vh;
@@ -677,12 +615,9 @@ margin-top: -20px;
     flex-direction: column;
 }
 
-
 .candidat div{
     margin-top: 20px;
-
 }
-
 
 .hold{
     border: 1px solid orange;
@@ -690,7 +625,6 @@ margin-top: -20px;
     width: 180px;
     background-color: transparent;
 }
-
 
 .candidat{
     display: hidden;
