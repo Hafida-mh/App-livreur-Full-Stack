@@ -8,12 +8,13 @@ export default function Merci() {
     <div className='Merci'>
         <div className='componentrmerci'> <NavBar /> </div>
         <div className='merciContent'> 
-    <div className='thank'> Merci pour votre confiance ! </div>
-    <div className='reception'> Vous recevrez les offres de livraison sur votre boite mail </div>
-    <div className='seeyou'>À trés bientôt </div>
-    <div>  <img src={Livreur}  className="livreurimg"/></div>
-    </div>
-    <div  className='componentrmerci'> <Footer /></div>
+           <div className='thank'> Merci pour votre confiance ! </div>
+           <div className='reception'> Vous recevrez les offres de livraison sur votre boite mail </div>
+            <div className='seeyou'>À trés bientôt </div>
+            <div>  <img src={Livreur}  className="livreurimg"/></div>
+         </div>
+
+         <div className='componentrmerci'> <Footer /></div>
     </div>
   )
 }
