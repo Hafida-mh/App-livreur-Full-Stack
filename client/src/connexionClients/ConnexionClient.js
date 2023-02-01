@@ -45,31 +45,20 @@ export default function ConnexionClient() {
         Email: "",
         Password: ""
     })
-
     const navigate = useNavigate();
-
-
     const onSuccess = (res) => {
         setProfile(res.profileObj);
         submitGoogle(res.profileObj.email)
     };
-
     const onFailure = (err) => {
         console.log('failed', err);
     };
-
     const logOut = () => {
         setProfile(null);
     };
-
-
-
-
-
 const submitGoogle = (user) => {
     const Email = JSON.stringify({Email : user});
     axios.post(`http://localhost:2000/appliv/client/googlesignin/`, Email, {
-
         headers: {
             'Content-Type': "application/json"
         }
@@ -80,7 +69,6 @@ const submitGoogle = (user) => {
             setAlertError(true)
             setIssignedin(false)
         }
-
         if (res.data.messageSuccess === "Connexion réussite" && res.data.messageError === "") {
             setMessageSuccess(res.data.messageSuccess);
             console.log(res.data.data.Email);
@@ -88,46 +76,24 @@ const submitGoogle = (user) => {
             setAlertSuccess(!alertSuccess,);
             localStorage.setItem('statut', 'connect');
             localStorage.setItem('Email', user);
-            setIssignedin(true)
-    
+            setIssignedin(true);
             navigate('/profile');
         }
     })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     const submit = () => {
-
         if (email && password)  {
-
             const dataTosend = JSON.stringify(dataConnexionClient);
-
             axios.post(`http://localhost:2000/appliv/client/connexion/`, dataTosend, {
-
                 headers: {
                     'Content-Type': "application/json"
                 }
             }).then((res) => {
-
                 console.log(res.data)
                 if ((res.data.messageError === "Adresse mail ou mot de passe incorrecte" && res.data.messageSuccess === "") || res.data.messageError === "Veuillez vos inscrirre") {
                     setMessageError(res.data.messageError);
                     setAlertError(true)
                 }
-
                 if (res.data.messageSuccess === "Connexion réussite" && res.data.messageError === "") {
                     setMessageSuccess(res.data.messageSuccess);
                     console.log(res.data.data.Email);
@@ -143,37 +109,22 @@ const submitGoogle = (user) => {
                 }
             })
         }
-
         else {
             setMessageError("Remplissez tous les champs");
             setAlertError(!alertError)
         }
-
     }
-
-
-
-
-
-
-
-
-
-
-
+    
     const getPassword = () => {
         console.log(emailRecup)
         if (emailRecup) {
             const datapw = JSON.stringify(dataPw);
             axios.post('http://localhost:2000/appliv/client/password/', datapw, {
-
                 headers: {
                     'Content-Type': "application/json"
                 }
             }).then((res) => {
-
                 if (res.data.message === "Mot de passe envoyé, vérifiez votre boite mail") {
-
                     setAlertSuccesspw(true);
                     setMsgSendPw(res.data.message);
                 }
@@ -184,12 +135,11 @@ const submitGoogle = (user) => {
 
             });
         }
-
         else {
             console.log("inscrivez-vous")
         }
     }
-
+    
     //console.log(dataConnexionClient)
     useEffect(() => {
         const initClient = () => {
@@ -203,46 +153,31 @@ const submitGoogle = (user) => {
 
     return (
         <div className='ConnexionClient'>
-
-
             <div> <NavBar /> </div>
-
-
-
-
-
 
             <div className='connexionTitle'>
                 <div> <h1> {t("espaceclient")} </h1>  </div>
                 <div>  <h3> {t("connexion")}  </h3>  </div>
             </div>
 
-
-
             <div className='formConnexion'>
-
                 {showSpinner && <div className='spinnerBox'>
-                    <div>         <    Spinner className='spinner' animation="grow" variant="warning" size="lg" /> </div>
-                </div>}
-                <div className='formContent'>
-
-
+                    <div>   <Spinner className='spinner' animation="grow" variant="warning" size="lg" /> </div>
+            </div>}
+            <div className='formContent'>
                     {
                         alertError && <div className='alrtContainer'>
                             <div className='alrt'>
-                                <Alert severity="error" className='errorAlrt'>{messageError}</Alert>
+                                <Alert severity="error" className='errorAlrt'> {messageError} </Alert>
                             </div>
                         </div>
                     }
-
-
                     {
                         alertSuccess &&
                         <div>
                             <Alert severity="success" >{messageSuccess}</Alert>
                         </div>
                     }
-
                     <div>
                         <GoogleLogin
                             clientId={clientId}
@@ -254,35 +189,37 @@ const submitGoogle = (user) => {
                         />
                     </div>
 
-
                     <form>
                         <div className='fomItem'>
                             <div className='formItemName'> {t("email")}  </div>
-                            <div> <input className='intputFormItem' type="email" value={email} onChange={(e) => {
-                                setEmail(e.target.value);
-                                setDataConnexionClient({ Email: e.target.value })
-                            }} /> </div>
+                            <div> 
+                                  <input 
+                                       className='intputFormItem' 
+                                       type="email" 
+                                       value={email} 
+                                       onChange={(e) => {setEmail(e.target.value);
+                                       setDataConnexionClient({ Email: e.target.value })}} /> 
+                            </div>
                         </div>
                         <div className='fomItem'>
-                            <div className='formItemName'> {t("motdepass")}  </div>
-                            <div> <input className='intputFormItem' type="password" value={password} onChange={(e) => {
-                                setPassword(e.target.value);
-                                setDataConnexionClient({ Password: e.target.value, Email: email })
-                            }} /> </div>
-                        </div>
+                            <div className='formItemName'> {t("motdepass")} </div>
+                            <div> 
+                                 <input 
+                                     className='intputFormItem' 
+                                     type="password" 
+                                     value={password} 
+                                     onChange={(e) => {setPassword(e.target.value);
+                                     setDataConnexionClient({ Password: e.target.value, Email: email })}} /> 
+                            </div>
+                       </div>
                     </form>
-
                     <div className='pw'> <div className='motpass' onClick={() => setModalShow(true)}> {t("motdepassoublier")}   </div></div>
                     <div className='pw'> <div> {t("pasdecompte")}  <Link to="/signupClient" className='linkSignupClient'> {t("inscrivezvous")}   </Link>  </div> </div>
                     <div className='buttonConnexion' onClick={() => submit()}> <div className='button'>  {t("connexion")} </div></div>
                 </div>
             </div>
 
-
             <div className='footerSection'> <Footer /> </div>
-
-
-
             {  /* <form onSubmit={(e) => e.preventDefault()}>
                 <div className='loginFields'>
                     <label> E-mail </label>
@@ -291,8 +228,6 @@ const submitGoogle = (user) => {
                         setDataConnexionClient({ Email: e.target.value })
                     }} />
                 </div>
-
-
                 <div className='loginFields'>
                     <label> Mot de passe </label>
                     <input type="password" value={password} onChange={(e) => {
@@ -300,19 +235,13 @@ const submitGoogle = (user) => {
                         setDataConnexionClient({ Password: e.target.value, Email: email })
                     }} />
                 </div>
-
             </form>
 
             <div>
                 <button className='submitButton' onClick={() => submit()}> Connexion</button>
             </div>
-
-
             <div className='inscription'> Vous ne possedez pas de compte ? <Link to="/signupClient" >inscrivez-vous </Link> </div>
                 */}
-
-
-
 
             <Modal
 
@@ -343,16 +272,6 @@ const submitGoogle = (user) => {
                     <Button className='boutonFermer' onClick={() => setModalShow(false)}>Fermer</Button>
                 </Modal.Footer>
             </Modal>
-
-
-
-
-
-
-
-
-
-
         </div>
     )
 
