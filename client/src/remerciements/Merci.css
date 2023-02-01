@@ -19,7 +19,6 @@
     width: 100%;
  }
 
-
  .merciContent{
     border: 1px hidden blue;
     height: auto;
@@ -39,7 +38,6 @@
     line-height: 1;
  }
 
-
  .merciContent .reception {
     font-size: 1.8em;
  }
@@ -57,7 +55,6 @@
     font-size: 1.6em;
     margin-top: 20px;
  }
-
 
 @media screen and (max-width : 839px) {
     .Merci{
