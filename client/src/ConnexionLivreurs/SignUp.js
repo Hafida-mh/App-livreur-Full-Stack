@@ -14,7 +14,6 @@ import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 export default function SignUp() {
-    
     const { i18n, t } = useTranslation(["common"])
     const [showSpinner, setShowSpinner] = useState(false);
     const [nom, setNom] = useState();
@@ -37,40 +36,27 @@ export default function SignUp() {
     const [alerteSuccess, setAlerteSuccess] = useState(false)
     const [data, setData] = useState({})
     const navigate = useNavigate();
-
-
-
-
     const getname = (e) => {
         setNom(e.target.value)
     }
-
     const getSecondName = (e) => {
         setPrenom(e.target.value)
     }
-
     const getadress = (e) => {
         setAdress(e.target.value)
     }
-
     const getphone = (e) => {
         setTel(e.target.value)
     }
     const getemail = (e) => {
         setEmail(e.target.value)
     }
-
-
     const getpassword = (e) => {
         setPassword(e.target.value)
     }
-
     const getconfirmedpassword = (e) => {
         setConfirmationPassword(e.target.value)
     }
-
-
-
     const getWilaya = () => {
         const optionsValue = document.querySelector('#sectionStatut');
         setWilaya(optionsValue.value);
@@ -84,37 +70,26 @@ export default function SignUp() {
             Cartegrise: cartegrise
         })
     }
-
-
     const getCommune = () => {
         const optionsValue = document.querySelector('#sectionCommune');
         setCommune(optionsValue.value);
     }
-
-
-
     const uploadHandlerPermis = (e) => {
         const dataa = new FormData();
         dataa.append('file', e.target.files[0]);
         /* axios.post('/upload', dataa).then((res) => setFile({ photo : [res.dataa]}));*/
         setPermis(e.target.files[0].name);
     }
-
-
-
     const uploadHandlerCarteG = (e) => {
         const dataa = new FormData();
         dataa.append('file', e.target.files[0]);
         /* axios.post('/upload', dataa).then((res) => setFile({ photo : [res.dataa]}));*/
         setCartegrise(e.target.files[0].name);
     }
-
-
-
     const vehiculeName = () => {
      const doc = document.getElementById('sectionVehicule');
-  setVehicule(doc.value);
-      setData({
+        setVehicule(doc.value);
+        setData({
             Password: password, Email: email, Telephone: "0"+ tel, Prenom: prenom, Nom: nom, id: id, Wilaya: wilaya,
             Commune: commune,
             Adresse: adress,
@@ -122,12 +97,8 @@ export default function SignUp() {
             Matricule: matricule,
             Permis: permis,
             Cartegrise: cartegrise
-        }) 
-       
+        });
     }
-
-
-
     const submit = () => {
         console.log(email)
         setAlerte(false);
@@ -142,13 +113,11 @@ export default function SignUp() {
         })
         if (nom && prenom && tel && email && wilaya && adress && vehicule && password && confirmationPassword) {
             if (password === confirmationPassword) {
-
                 const dataTosend = JSON.stringify(data);
                 axios.post(`http://localhost:2000/appliv/userLivreur/signup`, dataTosend, {
                     headers: {
                         'Content-Type': "application/json"
                     }
-
                 }).then((res) => {
 
                     if (res.data.messageError === "Adresse mail existe déja" && res.data.messageSuccess === "") {
@@ -157,7 +126,6 @@ export default function SignUp() {
                         setEmail("");
                         console.log(res.data);
                     }
-
                     if (res.data.messageSuccess === "Inscription réussite" && res.data.messageError === "") {
                         setMsgSuccess(res.data.messageSuccess);
                         setAlerteSuccess(!alerteSuccess);
@@ -165,7 +133,6 @@ export default function SignUp() {
                         localStorage.setItem('Email', res.data.data);
                         setShowSpinner(true);
                         navigate('/Merci');
-
                       /*  setTimeout(() => {
                             navigate('/Merci');
                         }, 2000);*/
@@ -173,32 +140,21 @@ export default function SignUp() {
                 }
                 );
             }
-
             else {
                 setAlerte(!alerte);
                 setMsg("Mots de passe non identiques")
             }
         }
-
-
         else {
             setAlerte(!alerte);
             setMsg("Remplissez tous les champs")
         }
-
     }
-
-    console.log(data)
-
     return (
 
         <div className='SignUp'>
-
-
             <div className='navv'> <NavBar /> </div>
-
             <div className='signUpTile' id="alertSignIn">
-
                 <div> <h1> {t("espacelivreur")}   </h1>  </div>
                 <div> <h3>   {t("inscription")}   </h3></div>
             </div>
@@ -207,7 +163,6 @@ export default function SignUp() {
                     <div>  <Spinner className='spinner' animation="grow" variant="warning" size="lg" /> </div>
                 </div>}
                 <div className='formContent'>
-
                     <div>
                         {
                             alerteSuccess && <div className='alrtContainer' >
@@ -227,8 +182,6 @@ export default function SignUp() {
                         }
 
                     </div>
-
-
                     <Form
                         profil={false} wilaya={true} vehicule={true} name={nom} getName={getname} secondname={prenom} getsecondName={getSecondName}
                         Adress={adress} getAdress={getadress}
@@ -240,12 +193,7 @@ export default function SignUp() {
                 </div>
             </div>
 
-
             <div> <Footer /> </div>
-
-
-
-           
         </div>
     )
 }
