@@ -3,7 +3,6 @@
     padding: 0;
  }
 
-
  .SwitchConnexion{
     border: 1px solid black;
     width: 100%;
@@ -13,7 +12,6 @@
     justify-content: center;
     flex-direction: column;
  }
-
 
  .identity{
      margin-top: 20px;
