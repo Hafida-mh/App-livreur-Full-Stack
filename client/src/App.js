@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { Suspense } from 'react';
 import './App.css';
 import Home from './HomePage/Home';
@@ -19,14 +18,11 @@ import Form from './form/Form';
 import Merci from './remerciements/Merci';
 import Contact from './contact/Contact';
 function App() {
-  return (<Suspense fallback={null}> 
+  return (
+<Suspense fallback={null}> 
     <div className="App">
-
-
-
-<BrowserRouter>
-<Routes> 
-       
+      <BrowserRouter>
+        <Routes> 
           <Route path="/" element={<Home />} />
           <Route path="/landingPage" element={<LandingPage />} />
           <Route path="/loginLivreur" element={<LoginLivreur />} />
@@ -38,18 +34,14 @@ function App() {
           <Route path="/connexionClient" element={<ConnexionClient />} />
           <Route path="/signupClient" element={<SignupClient />} />
           <Route path="/Merci" element={<Merci />} />
-       <Route path="/nav" element={<NavBar />} />
-       <Route path='/footer' element={<Footer />} />
-       <Route path='/contact' element={<Contact />} />
-       <Route path='/form' element={<Form />} />
-          </Routes>
- </BrowserRouter>
-
-
-
-    </div>
+          <Route path="/nav" element={<NavBar />} />
+          <Route path='/footer' element={<Footer />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/form' element={<Form />} />
+      </Routes>
+    </BrowserRouter>
+  </div>
 </Suspense>
   );
 }
-
 export default App;
