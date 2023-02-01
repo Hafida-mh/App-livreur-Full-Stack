@@ -10,14 +10,14 @@
     position: absolute;
 }
 
-.Signup{
+.Signup {
     border: 1px hidden black;
     height: auto;
     width: 100%;
     position: relative;
  }
 
-.signUpTile{
+.signUpTile {
    border: 1px hidden black;
    height: auto;
    width: 100%;
@@ -42,7 +42,7 @@
    margin-top: -10px;
 }
 
-.formContainer{
+.formContainer {
    border: 1px hidden black;
    height: auto;
    width: 100%;
@@ -54,7 +54,7 @@
    position: relative;
 }
 
-.formContent{
+.formContent {
    border: 1px hidden green;
    height: 100%;
    width: 900px;
@@ -63,7 +63,7 @@
    justify-content: center;
 }
 
-.formItem{
+.formItem {
    border: 1px hidden red;
    height: auto;
    width: 100%;
@@ -81,7 +81,7 @@
    justify-content: space-around;
 }
 
-.inputFiled{
+.inputFiled {
    border: 1px solid black;
    height: 60px;
    width: 300px;
@@ -104,7 +104,7 @@
    height: auto;
 }
 
-.inputFiledInfo{
+.inputFiledInfo {
    width: 750px;
    height: 60px;
    border-radius: 10px;
@@ -113,7 +113,7 @@
    font-size: 1.4em;
 }
 
-.nameFormInfo{
+.nameFormInfo {
     width: 100%;
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@
    margin-top: 20px;
 }
 
-.profilClient{
+.profilClient {
    border: 1px hidden red;
    height: 120px;
    width: 100%;
@@ -140,7 +140,7 @@
    border-radius: 10px;
 }
 
-.selectChoice{
+.selectChoice {
    border: 1px hidden white;
    height: 100%;
    width: 450px;
@@ -149,7 +149,7 @@
    justify-content: flex-end;
 }
 
-.selectfieldInfo{
+.selectfieldInfo {
    width: 400px;
    height: 50px;
    outline: none;
@@ -161,7 +161,7 @@
    color: white;
 }
 
-.buttonContainer{
+.buttonContainer {
    border: 1px hidden pink;
    height: auto;
    width: 100%;
@@ -170,7 +170,7 @@
    justify-content: center;
 }
 
-.buttonConnexion{
+.buttonConnexion {
    border: 1px hidden pink;
    height: 50px;
    width: 130px;
@@ -184,18 +184,18 @@
     margin-top: 40px;
 }
 
-#sectionStatut{
+#sectionStatut {
    font-size: 1.4em;
 }
 
-.spinner{
+.spinner {
    width: 100px;
    height: 100px;
    background-color: #FCBA5A;
    
 }
 
-.spinnerBox{
+.spinnerBox {
    border: 1px hidden orange;
    min-height: 100%;
    width: 100%;
@@ -212,7 +212,7 @@
 }
 
 /* ************ ALERT *********** */
-.alrtContainer{
+.alrtContainer {
    border: 1px hidden black;
    height: auto;
    width: 100%;
@@ -221,11 +221,11 @@
    justify-content: center;
 }
 
-.alrt{
+.alrt {
    width: 900px ;
 }
 
-.errorAlrt{
+.errorAlrt {
    width: 100%;
    height: 60px;
 } 
