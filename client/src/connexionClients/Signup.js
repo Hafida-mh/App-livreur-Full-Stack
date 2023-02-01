@@ -14,7 +14,6 @@ import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 export default function Signup() {
-
     const { i18n, t } = useTranslation(["common"])
     const [nom, setNom] = useState();
     const [prenom, setPrenom] = useState();
@@ -40,32 +39,24 @@ export default function Signup() {
         Password: ""
     })
     const navigate = useNavigate();
-
-
     const getname = (e) => {
         setNom(e.target.value)
     }
-
     const getSecondName = (e) => {
         setPrenom(e.target.value)
     }
-
     const getadress = (e) => {
         setAdress(e.target.value)
     }
-
     const getphone = (e) => {
         setTel(e.target.value)
     }
     const getemail = (e) => {
         setEmail(e.target.value)
     }
-
-
     const getpassword =(e)=>{
         setPassword(e.target.value)
     }
-
     const getconfirmedpassword =(e)=>{
         setConfirmationPassword(e.target.value)
     }
@@ -83,9 +74,6 @@ export default function Signup() {
             Adress: adress
         });
     }
-
-
-
     const submit = (e) => {
         setAlerte(false);
         if (nom && prenom && tel && email && statut && password && confirmationPassword) {
@@ -103,14 +91,11 @@ export default function Signup() {
                 });
 
                 const dataTosend = JSON.stringify(data);
-
                 axios.post(`http://localhost:2000/appliv/client/signup/`, dataTosend, {
                     headers: {
                         'Content-Type': "application/json"
                     }
-
                 }).then((res) => {
-
                     if (res.data.messageError === "Adresse mail existe déja" && res.data.messageSuccess === "") {
                         setAlerte(!alerte);
                         setMsg(res.data.messageError);
@@ -119,7 +104,6 @@ export default function Signup() {
                         setEmail("");
                         console.log(res.data);
                     }
-
                     if (res.data.messageSuccess === "Inscription réussite" && res.data.messageError === "") {
                         console.log(res)
                         setMsgSuccess(res.data.messageSuccess);
@@ -127,39 +111,25 @@ export default function Signup() {
                         localStorage.setItem('statut', 'connect');
                         localStorage.setItem('Email',  data.Email);
                         navigate('/profile');
-                      
                     }
                 }
                 );
             }
-
             else {
                 setAlerte(!alerte);
                 setMsg("Mots de passe non identiques")
             }
         }
-
-
         else {
             setAlerte(!alerte);
             setMsg("Remplissez tous les champs")
         }
-
     }
-
-
-
     const tryUpDate = () => {
-
-
         const dataTosendID = JSON.stringify(id);
         axios.put(`http://localhost:2000/appliv/client/upDateNumber/`).then((res) => console.log("all good"));
         console.log(dataTosendID)
     }
-
-
-
-
 
     useEffect(() => {
         setData({
@@ -177,46 +147,17 @@ export default function Signup() {
 
     return (
         <div className='Signup'>
-
-
             <div className='navv'> <NavBar /> </div>
-
             <div className='signUpTile' id="alertee">
-
                 <div> <h1> {t("espaceclient")}</h1>  </div>
                 <div> <h3> {t("inscription")}  </h3></div>
             </div>
+                            
             <div className='formContainer'>
-
                 {showSpinner && <div className='spinnerBox'>
                     <div>  <Spinner className='spinner' animation="grow" variant="warning" size="lg" /> </div>
                 </div>}
                 <div className='formContent'>
-
-                    <div>
-
-
-{/*
-                        {
-                            alerteSuccess && <div className='alrtContainer'>
-                                <div className='alrt'>
-                                    <Alert severity="success" className='errorAlrt'>{msgSuccess}</Alert>
-                                </div>
-                            </div>
-                        }
-
-
-                        {
-                            alerte && <div className='alrtContainer'>
-                                <div className='alrt'>
-                                    <Alert severity="error" className='errorAlrt'>{msg}</Alert>
-                                </div>
-                            </div>
-                        }*/}
-
-                    </div>
-
-
                     <Form 
                     profil={true} name={nom} getName={getname} secondname={prenom} getsecondName={getSecondName} 
                     Adress={adress} getAdress={getadress}  
@@ -226,18 +167,8 @@ export default function Signup() {
                     getStatutprofil={getStatut} Submit={submit} Success={alerteSuccess} msgSuccess={msgSuccess} Error={alerte} 
                     msgError={msg} link="#alertee"
                     />
-
-
-
-
-
-
-
-
+                           
                     {  /*   <form style={{ "marginTop": "20px" }} onSubmit={(e) => e.preventDefault()}>
-
-
-
                         <div className='formItem'>
                             <div className='nameForm'>
                                 <div className='formNomination'>  Nom </div>
@@ -247,7 +178,6 @@ export default function Signup() {
                                     setData({ Nom: nom })
                                 }} /></div>
                             </div>
-
                             <div className='nameForm'>
                                 <div className='formNomination'>  Prénom </div>
                                 <div> <input className='inputFiled' type="text" value={prenom} onChange={(e) => {
@@ -256,8 +186,6 @@ export default function Signup() {
                                 }} /></div>
                             </div>
                         </div>
-
-
                         <div className='formItemInfo'>
                             <div className='nameFormInfo'>
                                 <div className='formNomination'>  Adresse </div>
@@ -267,7 +195,6 @@ export default function Signup() {
                                 }} /></div>
                             </div>
                         </div>
-
                         <div className='formItemInfo'>
                             <div className='nameFormInfo'>
                                 <div className='formNomination'>  Téléphone </div>
@@ -278,7 +205,6 @@ export default function Signup() {
                                 } value={tel} /></div>
                             </div>
                         </div>
-
                         <div className='formItemInfo'>
                             <div className='nameFormInfo'>
                                 <div className='formNomination'>  Email </div>
@@ -288,7 +214,6 @@ export default function Signup() {
                                 }} /></div>
                             </div>
                         </div>
-
                         <div className='formItem password'>
                             <div className='nameForm'>
                                 <div className='formNomination'>  Password </div>
@@ -297,7 +222,6 @@ export default function Signup() {
                                     setData({ Password: e.target.value, Email: email, Telephone: tel, Prenom: prenom, Statut: statut, Nom: nom, Adress: adress, id: id })
                                 }} /></div>
                             </div>
-
                             <div className='nameForm confirmation'>
                                 <div className='formNomination confirmation'>  Confirmer password </div>
                                 <div> <input className='inputFiled' type="password" value={confirmationPassword} onChange={(e) => {
@@ -317,16 +241,12 @@ export default function Signup() {
                                     <option id="ptions" value="Une entreprise"> Une entreprise </option>
                                     <option id="ptions" value="Un particulier"> Un particulier </option>
                                 </select></div>
-
                             </div>
                         </div>
-
 {                    /*    <div className='buttonContainer'>  <a href='#alertee'> <div className='buttonConnexion' onClick={() => submit()}> <div className='button'> S'inscrire </div></div> </a> </div>
 }                    </form> */}
-
                 </div>
             </div>
-
 
             <div> <Footer /> </div>
 
@@ -342,104 +262,71 @@ export default function Signup() {
                     <Alert severity="error">{msg}</Alert>
                 </div>
             }
-
-
             <div className='nameFields'>
                 <div>
                     <label> Nom</label>
                     <input type="text" className='inputName' value={nom} onChange={(e) => {
-
-setNom(e.target.value)
-setData({Nom : nom})
-
+                        setNom(e.target.value)
+                        setData({Nom : nom})
                     } } />
                 </div>
 
                 <div>
                     <label> Prénom</label>
                     <input type="text" className='inputName' value={prenom} onChange={(e) => 
-                        
                         {
                             setPrenom(e.target.value)
                             setData({Prenom : prenom})
-
                         }
-                        
                        } />
                 </div>
             </div>
-
-
             <div className='secondRowFields'>
                 <div>
                     <label> ID</label>
                     <input type="text" disabled value={id} className='inputSecondField' placeholder={id} />
                 </div>
-
-
-
-                <div>
-                    <label> Téléphone</label>
-                    <input type="text" className='inputSecondField' onChange={(e) =>
-                        
+             <div>
+             <label> Téléphone</label>
+             <input type="text" className='inputSecondField' onChange={(e) =>
                         {
                             setTel(e.target.value);
                             setData({Telephone : tel})
                         }
                         } value={tel} />
                 </div>
-
-
-
                 <div>
                     <label> E-mail</label>
                     <input type="text" className='inputSecondField' value={email} onChange={(e) => {
-setEmail(e.target.value);
-setData({ Email : email})
+                            setEmail(e.target.value);
+                            setData({ Email : email})
                     } } />
                 </div>
             </div>
-
-
-
             <div>
-
                 <label> Vous êtes :  </label>
                 <select id="sectionStatut" defaultValue={'DEFAULT'} onChange={()=> getStatut()} className='selectfield'>
                     <option value="DEFAULT" disabled>Choisissez  ...</option>
                     <option id="ptions" selected value=" Un magasin">  Un magasin </option>
                     <option id="ptions" value="Une entreprise"> Une entreprise </option>
-
                 </select>
-
             </div>
-
-
-<div>
-    <label> Mot de passe</label>
-    <input type="password" value={password} onChange={(e) => {
-setPassword(e.target.value)
-setData({Password : e.target.value, Email : email, Telephone : tel, Prenom : prenom,  Statut: statut, Nom : nom, id : id})
-    } }/>
-</div>
-
-<div>
-    <label> Confirmer mot de passe</label>
-    <input type="password" value={confirmationPassword} onChange={(e) => {
-setConfirmationPassword(e.target.value);
-
-    }}/>
-</div>
-
-
             <div>
-<button onClick={()=> submit()}> S'inscrire </button>
+                <label> Mot de passe</label>
+                <input type="password" value={password} onChange={(e) => {
+                        setPassword(e.target.value)
+                        setData({Password : e.target.value, Email : email, Telephone : tel, Prenom : prenom,  Statut: statut, Nom : nom, id : id})
+                 } }/>
             </div>
-
-
-
-<button onClick={() => tryUpDate() }> UPDATE</button> */}
-
+            <div>
+                <label> Confirmer mot de passe</label>
+                <input type="password" value={confirmationPassword} onChange={(e) => {
+                        setConfirmationPassword(e.target.value);}}/>
+            </div>
+            <div>
+                <button onClick={()=> submit()}> S'inscrire </button>
+            </div>
+            <button onClick={() => tryUpDate() }> UPDATE</button> */}
         </div>
     )
 }
