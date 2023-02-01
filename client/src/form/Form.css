@@ -3,8 +3,6 @@
    padding: 0;
 }
 
-
-
 .formcontainer,
 .formcontent {
    border: 1px hidden black;
@@ -13,7 +11,7 @@
    align-items: center;
    justify-content: center;
    flex-direction: column;
-z-index: 3345544;
+   z-index: 3345544;
 }
 
 .formcontainer {
@@ -123,14 +121,9 @@ z-index: 3345544;
    color: white;
 }
 
-
-
-
 #sectionStatut {
    font-size: 1.4em;
 }
-
-
 
 .alrtContainer+form {
    margin-top: 40px;
@@ -138,157 +131,141 @@ z-index: 3345544;
 
 /* ******** RESPONSIVE ********** */
 @media screen and (max-width : 907px) {
-   .nameForm {
+.nameForm {
       flex-direction: column;
       align-items: flex-start;
       border: 1px hidden red;
       width: 300px;
-   }
+}
 
-   .nameFormInfo {
+.nameFormInfo {
       flex-direction: column;
       align-items: flex-start;
-   }
+}
 
-   .formContainer .formcontent {
+.formContainer .formcontent {
       border: 1px hidden black;
       width: 100%;
-   }
+}
 
-
-
-   .inputFiledInfo,
-   .nameForm,
-   .inputFiled {
+.inputFiledInfo,
+.nameForm,
+.inputFiled {
       width: 600px;
    }
 
-   .formItem {
+.formItem {
       flex-direction: column;
-   }
+}
 
-   .formNomination.confirmation {
+.formNomination.confirmation {
       width: 270px;
       border: 1px hidden orange;
       justify-content: flex-start;
-   }
+}
 
-   .nameForm.confirmation {
+.nameForm.confirmation {
       margin-top: 20px;
-   }
+}
 
-
-   .profilClient {
+.profilClient {
       flex-direction: column;
       justify-content: flex-start;
       position: relative;
-   }
+}
 
-
-   .selectChoice {
+.selectChoice {
       width: 100%;
       justify-content: flex-end;
-   }
+}
 
-
-   #sectionStatut {
+#sectionStatut {
       position: absolute;
       left: 0;
       right: 0;
       bottom: 5px;
       width: 100%;
-
    }
 }
 
-
 @media screen and (max-width: 656px) {
-   .nameForm {
+.nameForm {
       width: 700px;
       border: 1px hidden blue;
-   }
+}
 
-   .formItem,
-   .formItemInfo {
+.formItem,
+.formItemInfo {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       border: 1px hidden green;
-   }
+}
 
-
-
-
-   .inputFiledInfo,
-   .nameForm,
-   .inputFiled {
+.inputFiledInfo,
+.nameForm,
+.inputFiled {
       width: 450px;
-   }
+}
 
-   .nameFormInfo {
+.nameFormInfo {
       flex-direction: column;
       align-items: center;
       text-align: left;
+}
 
-   }
-
-   .formContainer .formContent {
+.formContainer .formContent {
       align-items: center;
       justify-content: center;
       border: 1px hidden pink;
-   }
+}
 
-   #sectionStatut {
+#sectionStatut {
       width: 450px;
       border: 1px hidden blue;
-   }
+}
 
-   .formNomination,
-   .profilClientNomination {
+.formNomination,
+.profilClientNomination {
       border: 1px hidden black;
       width: 440px;
    }
 }
 
 @media screen and (max-width: 469px) {
-   .nameForm {
+.nameForm {
       width: 700px;
       border: 1px hidden blue;
-   }
+}
 
-   .formItem,
-   .formItemInfo {
+.formItem,
+.formItemInfo {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       border: 1px hidden green;
    }
-
-
-
-
-   .inputFiledInfo,
-   .nameForm,
-   .inputFiled {
+   
+.inputFiledInfo,
+.nameForm,
+.inputFiled {
       width: 310px;
-   }
+}
 
-   .nameFormInfo {
+.nameFormInfo {
       flex-direction: column;
       align-items: center;
       text-align: left;
-   }
+}
 
-
-   #sectionStatut {
+ #sectionStatut {
       width: 310px;
       border: 1px hidden blue;
-   }
+}
 
-   .formNomination,
-   .profilClientNomination {
+.formNomination,
+.profilClientNomination {
       border: 1px hidden black;
       width: 310px;
-   }
-
+}
 }
