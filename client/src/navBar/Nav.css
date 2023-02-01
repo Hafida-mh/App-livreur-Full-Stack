@@ -12,7 +12,6 @@
     background-color: white
 }
 
-
 .navBar .itemnav {
     color: red;
     font-size: 1.1em;
@@ -48,7 +47,6 @@
     color: black;
 }
 
-
 #responsive-navbar-nav {
     background-color: white;
 }
@@ -65,25 +63,24 @@
 .navBar .connexionProfil {
     z-index: -12;
 }
+
 .linkNav:hover {
-color: black;
+    color: black;
 }
 
-
-
 @media screen and (max-width : 992px){
-    .navBar { 
+.navBar { 
         height: 150px;
         width: 100%;
         position: relative;
     }
-    #responsive-navbar-nav {
+    
+#responsive-navbar-nav {
         margin-top: -30px;
    width: 100%;
     }
-
-
 }
+
 /*
 .linkTo {
     text-decoration: none;
@@ -102,18 +99,14 @@ color: black;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-
-
     background-color: white;
     z-index: 200;
-
 }
 
 .closeButton {
     margin: 20px;
     color: white;
 }
-
 
 .navbarContainer{
     border: 1px solid red;
@@ -124,13 +117,11 @@ color: black;
     justify-content: center;
 }
 
-
 .navContent {
     border: 1px solid blue;
     height: auto;
     width: auto;
     margin-left: 80px;
-
 }
 
 .logoContent {
@@ -140,14 +131,12 @@ color: black;
     margin-left: 20px;
 }
 
-
 .logoContent img {
     border: 1px hidden black;
     height: 120px;
     width: 180px;
     object-fit: cover;
 }
-
 
 .connexion {
     border: 1px solid pink;
@@ -159,7 +148,6 @@ color: black;
     word-spacing: 15px;
     margin-right: 20px;
 }
-
 
 .navItem {
     font-size: 20px;
@@ -191,7 +179,6 @@ color: black;
     font-weight: 800;
 }
 
-
 .connexion .burgerButton {
     border: 1px solid black;
     height: 80px;
@@ -211,11 +198,8 @@ color: black;
     outline: none;
 }
 
-
-
 .navItem div:hover {
     border-bottom: 2.5px solid #FCBA5A;
-
 }
 
 .navResponsive {
@@ -234,7 +218,6 @@ color: black;
     color: black;
     z-index: 12345675678;
 }
-
 
 .navResponsive div {
     margin: 10px;
@@ -271,8 +254,6 @@ color: black;
     color: white;
 }
 
-
-
 .clientLivreur {
     border: 1px hidden white;
     height: auto;
@@ -294,18 +275,15 @@ color: black;
     color: white;
 }
 
-
 .clientLivreurContainer .linkToClient {
     color: white;
     text-decoration: none;
 }
 
-
 .linkNav {
     text-decoration: none;
     color: black;
 }
-
 
 .linkNav:hover {
     color: black;
@@ -316,7 +294,6 @@ color: black;
     height: 60px;
     border: 1px solid black;
 }
-
 
 .connexionProfil {
     border: 1px solid black;
@@ -331,32 +308,27 @@ color: black;
     width: 100%;
     object-fit: cover;
     border: 1px solid black;
-
 }
 
 @media screen and (max-width : 1038px) {
-    .connexion .burgerButton {
-        display: inline-flex;
-
-    }
-
-    #sectionLanguage,
-    .connexion .button,
-    .navItem {
-        display: none;
-    }
-
-    .navContainer {
-        height: auto;
-    }
+.connexion .burgerButton {
+    display: inline-flex;
 }
 
+#sectionLanguage,
+.connexion .button,
+.navItem {
+   display: none;
+}
+
+.navContainer {
+   height: auto;
+    }
+}
 
 @media screen and (max-width : 358px) {
     .logoContent {
         margin-left: 0px;
     }
 }
-
-
 */
