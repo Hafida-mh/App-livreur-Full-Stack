@@ -78,15 +78,7 @@ export default function NavBar() {
   useEffect(() => { verifyConnexion() })
 
   return (
-
-
-
     <div className='navContainer'>
-
-
-
-
-
       <Navbar collapseOnSelect expand="lg" fixed="top" className='navBar'>
         <Container>
           <Navbar.Brand href="#home" className='logoNav'>  <img src={Logo} /></Navbar.Brand>
@@ -106,14 +98,11 @@ export default function NavBar() {
                       <NavDropdown.Item href="#action/3.1" eventKey="Fr" onClick={() => handlechangelng(elm)}> {elm}</NavDropdown.Item>
                     )
                   })}
-
                 </NavDropdown>
-
               </Nav.Link>
-              {!showProfil && <Nav.Link eventKey={2} href="#memes">
-                <button className='buttonConnexionNav'> <Link to="/connexionClient" className='linkNav'>  {t("connexion")} </Link> </button>
+                 {!showProfil && <Nav.Link eventKey={2} href="#memes">
+                 <button className='buttonConnexionNav'> <Link to="/connexionClient" className='linkNav'>  {t("connexion")} </Link> </button>
               </Nav.Link>}
-
               <Nav.Link>
                 {showProfil &&
                   <OverlayTrigger
@@ -124,38 +113,25 @@ export default function NavBar() {
                   </OverlayTrigger>
                 }
               </Nav.Link>
-
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
-
-
-
-
-
-
-
-
       { /*  <div className='logoContent'> <img src={Logo} /> </div>
 
       <div className='navItem'>
-
         <div> <Link to="/" className='linkNav'>  {t("accueil")} </Link> </div>
         <div> <Link to="/signUpLivreur" className='linkNav'>  {t("espacelivreur")} </Link> </div>
         <div onClick={() => redirect()}> <Link to="/connexionClient" className='linkNav'>  {t("espaceclient")} </Link> </div>
         <div>  <Link to="/contact" className='linkNav'>  {t("contact")} </Link> </div>
-
       </div>
-
       <div className='connexion'>
         <div className='langage'>
           <select id="sectionLanguage" defaultValue={'DEFAULT'} className='selectfield' value={localStorage.getItem("i18nextLng")} onChange={handlechangelng}>
             <option id="ptions" selected value="ar">  AR</option>
             <option value="fr">FR</option>
           </select>
-
         </div>
         {(!showProfil) && <div className='button'>
           <div onClick={() => clickConnexion()}> {t("connexion")}  </div>
@@ -163,7 +139,6 @@ export default function NavBar() {
         <div className='burgerButton'>
           <div onClick={() => showResponsiveNav()}>  <img src={Burgerbutton} className="imgSmallScreen" />  </div>
         </div>
-
         <div>
           {showProfil &&
             <OverlayTrigger
@@ -175,16 +150,12 @@ export default function NavBar() {
           }
         </div>
       </div>
-
-
       {show && <div className='navResponsive'>
         <div>  <Link to="/" className='linkTo'>{t("accueil")} </Link>  </div>
         <div> <Link to="/signUpLivreur" className='linkNav'>  {t("espacelivreur")} </Link> </div>
         <div> <Link to="/connexionClient" className='linkNav'> {t("espaceclient")} </Link>  </div>
         <div> {t("contact")}  </div>
       </div>}
-
-
       {connexionn && <div className='choiceConnexion'>
         <div className='choiceConnexioncontainer'>
           <CloseButton className='closeButton' variant='white' onClick={() => clickConnexion()} />
@@ -198,6 +169,5 @@ export default function NavBar() {
         </div>
       </div>} */}
     </div>
-
   )
 }
